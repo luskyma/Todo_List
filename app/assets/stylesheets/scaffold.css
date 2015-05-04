@@ -1,0 +1,85 @@
+body { background-color: #fff; color: #333; background-image: url("wynguys.jpg"); background-size: cover; background-repeat: no-repeat;}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+
+}
+.page-header {
+  color: aqua;
+
+}
+.newlist h2 {
+  color: yellow; margin-left: 30px;
+}
+.listing h2 {
+  color: yellow;
+}
+.table {
+  color: aqua;
+  background-color: gray;
+    opacity: 0.8;
+    filter: Alpha(opacity=20); /* IE8 and earlier */
+}
+.field {
+  color: yellow; margin-left: 30px;
+}
+.actions {
+  color: purple; margin-left: 30px;
+}
+.td a {
+  color: yellow;
+}
+p {
+  color: yellow;
+}
+
+a { color: yellow; }
+a:visited { color: yellow; }
+a:hover { color: #fff; background-color: purple; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: yellow;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

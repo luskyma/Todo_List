@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<div class="listing">
+<h2>Listing Todo Lists</h2>
+</div>
+
+<table class="table">
+
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Due Date Time</th>
+      <th>Completed</th>
+      <th colspan="10"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_lists.each do |todo_list| %>
+      <tr>
+        <td><%= todo_list.task %></td>
+        <td><%= todo_list.due_date_time %></td>
+        <td><%= todo_list.completed %></td>
+        <td><%= link_to 'Show', todo_list %></td>
+        <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
+        <td><%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo list', new_todo_list_path %>
